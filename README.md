@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Rumah Belajar Nur Ilmi 🌟
 
-## Getting Started
+Landing page responsif dan modern untuk **Rumah Belajar Nur Ilmi**, sebuah fasilitas pendidikan anak usia dini (PAUD/TK) swadaya yang berlokasi di Cimenyan, Kabupaten Bandung. Website ini didesain secara khusus untuk merefleksikan lingkungan belajar yang ceria, penuh kasih sayang, dan organik (tanpa desain kaku/kotak-kotak).
 
-First, run the development server:
+## 🚀 Fitur Utama
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Desain Organik & Playful**: Menggunakan bentuk asimetris, *svg wave dividers*, dan sudut melengkung yang lembut untuk menciptakan nuansa yang ramah anak.
+- **Micro-Animations Halus**: Interaksi hover bergaya *spring* (memantul), parallax elemen dekoratif (*Floating Shapes*), dan animasi masuk menggunakan **Framer Motion**.
+- **Performa Tinggi**: Dibangun dengan **Next.js 14 (App Router)** untuk loading yang super cepat dan SEO-friendly.
+- **Pemisahan Data & UI**: Seluruh konten tulisan (teks pahlawan, program, testimoni, kontak) dikelola secara terpusat di `lib/data.ts` sehingga mempermudah pembaruan konten tanpa perlu menyentuh struktur kode UI.
+- **Terintegrasi secara Langsung**: 
+  - *Embed* Google Maps yang interaktif dan dapat diklik untuk membuka aplikasi navigasi.
+  - Video *embed* YouTube responsif.
+  - Tautan *Call to Action* (CTA) WhatsApp dengan *draft* pesan otomatis.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/) (React, App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: Komponen berbasis [Shadcn UI](https://ui.shadcn.com/) (Cards, Buttons)
+- **Animasi**: [Framer Motion](https://www.framer.com/motion/)
+- **Ikonografi**: [Lucide React](https://lucide.dev/)
+- **Tipografi**: Google Fonts (`Fredoka` untuk judul yang *bouncy* dan ceria, `Nunito` untuk teks badan yang ramah dibaca).
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Struktur Proyek Utama
 
-## Learn More
+- `app/page.tsx` - Komponen halaman utama (Hero, About, Programs, Testimonials, dll).
+- `app/layout.tsx` - Konfigurasi layout global, font, dan Metadata (SEO).
+- `app/icon.svg` - Favicon kustom khusus untuk Nur Ilmi.
+- `lib/data.ts` - *Single Source of Truth* untuk semua konten teks (copywriting) website.
+- `components/ui/` - Komponen UI yang digunakan ulang.
 
-To learn more about Next.js, take a look at the following resources:
+## 💻 Panduan Instalasi & Menjalankan (Local Development)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pastikan Anda memiliki [Node.js](https://nodejs.org/) terinstal di mesin Anda.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone repository ini** (jika menggunakan git) dan masuk ke direktori proyek.
+2. **Install dependencies**:
+   ```bash
+   npm install
+   # atau
+   yarn install
+   ```
+3. **Jalankan *Development Server***:
+   ```bash
+   npm run dev
+   # atau
+   yarn dev
+   ```
+4. Buka [http://localhost:3000](http://localhost:3000) di browser Anda untuk melihat hasilnya. Halaman akan otomatis melakukan *update* jika Anda mengedit file.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Developed by Kelompok NaraCahaya.* 🧡
