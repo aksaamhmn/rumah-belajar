@@ -231,7 +231,7 @@ export default function Home() {
               >
                 <iframe 
                   className="absolute inset-0 w-full h-full"
-                  src="https://www.youtube.com/embed/GzUvL-Hed0U?si=qz0KjTNy5xVo5MQn" 
+                  src="https://www.youtube.com/embed/eY0tSryMuy8" 
                   title="YouTube video player" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
@@ -420,19 +420,19 @@ export default function Home() {
               {/* Maps Embed */}
               <motion.div whileHover={{ scale: 1.02 }} className="w-full h-48 bg-teal-800/50 rounded-3xl border-4 border-white overflow-hidden shadow-lg relative group">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Institut%20Teknologi%20Nasional%20Bandung&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  src="https://maps.google.com/maps?q=-6.884806,107.670611&t=&z=17&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="100%" 
                   style={{ border: 0, pointerEvents: 'none' }} 
                   allowFullScreen={true} 
                   loading="lazy" 
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Peta Lokasi Institut Teknologi Nasional Bandung"
+                  title="Peta Lokasi Rumah Belajar Nur Ilmi"
                   className="absolute inset-0 w-full h-full"
                 ></iframe>
                 {/* Clickable Overlay */}
                 <a 
-                  href="https://www.google.com/maps/search/?api=1&query=Institut+Teknologi+Nasional+Bandung" 
+                  href="https://www.google.com/maps/search/?api=1&query=-6.884806,107.670611" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="absolute inset-0 z-10 bg-transparent flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:bg-teal-900/40 transition-all duration-300"
